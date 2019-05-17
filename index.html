@@ -10,27 +10,47 @@
 
     <body>
         <!-- The body is the entire viewable area of the webpage. For example, we can see texts, links, images, and media. -->
-        <h1>Realty</h1>
-        <h2>Group</h2>
-        <!-- Links -->
-        <a href="index.html">About</a>
-        <a href="new-properties.html">New Properties</a>
-        <a href="real-estate-listings.html">Listings</a>
-        <a href="market-report.html">Market Report</a>
-        <a href="contact.html">Contact</a>
-        <a href="http://hud.gov" target="_blank">H.U.D.</a>
+        <header>
+            <h1>Realty</h1>
+            <h2>Group</h2>
+            <!-- Links -->
+            <nav>
+                <a href="index.html">About</a>
+                <a href="new-properties.html">New Properties</a>
+                <a href="real-estate-listings.html">Listings</a>
+                <a href="market-report.html">Market Report</a>
+                <a href="contact.html">Contact</a>
+                <a href="http://hud.gov" target="_blank">H.U.D.</a>
+            </nav>
+        </header>
 
-        <img src="images/flatiron-image.jpg" alt="A Beautiful Medallion of some sort" 
-        title="This is a very nice medallion.">
-        <!--
-            foldername/ = go inside that folder.
-            filename = use a file in current folder.
-            ../ = leave the current folder and go up to the parent folder.
-        -->
-        
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Molestias illum harum iusto error ducimus nihil aut, at natus ut est, reiciendis doloremque voluptatum voluptas explicabo illo qui doloribus provident eligendi.</p>
-        <p>Hello, World.</p>
-        <p>Hello, Moon.</p>
-        <iframe src="https://archive.org/embed/youtube-7tx8oi7sFoc" width="640" height="480" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+        <section id="featured-property">
+            <figure>
+                <img src="images/flatiron-image.jpg" alt="A Beautiful Medallion of some sort" 
+                title="This is a very nice medallion.">
+                <figcaption>This is a medallion. Unknown photographer</figcaption>
+            </figure>
+            <!--
+                foldername/ = go inside that folder.
+                filename = use a file in current folder.
+                ../ = leave the current folder and go up to the parent folder.
+            -->
+            
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Molestias illum harum iusto error ducimus nihil aut, at natus ut est, reiciendis doloremque voluptatum voluptas explicabo illo qui doloribus provident eligendi.</p>
+            <p>Hello, World.</p>
+            <p>Hello, Moon.</p>
+        </section>
+
+        <section id="promotional">
+            <figure>
+                <iframe src="https://archive.org/embed/youtube-7tx8oi7sFoc" width="640" height="480" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+                <figcaption>Realty Group Promotional Video. Source: archive.org</figcaption>
+            </figure>
+        </section>
+
+        <footer>
+            &copy; 2019 Realty Group. All rights reserved
+        </footer>
+
     </body>
 </html>
