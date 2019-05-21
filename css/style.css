@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Clicker+Script|Elsie+Swash+Caps&display=swap');
+
+/* This is a comment !! */
+
+/* CSS Syntax: 
+
+selector {
+    property: value;
+    property: value;
+}
+Type selector: 
+p { select all <p> elements } 
+*/
+
+p { font-size: 16px; /* #px, ?pt, 100%, #em */
+    line-height: 1.5em;
+}
+
+figcaption {
+    /* font-weight: normal;
+    font-size: 0.75em;
+    line-height: 1.5em;
+    font-family: Georgia, "New Times Roman", serif; */
+    font: normal 0.75em/1.5em 'Elsie Swash Caps', cursive;
+    color: rgba(120, 43, 46, 1);
+    text-align: right;
+}
+
+/* 
+Class Selector: applied to as many elements as you'd like
+
+.(classname) { select elements w class attribute equal to classname } */
+
+.milk-text {
+    font: bold 2.6em 'Elsie Swash Caps', cursive;
+    color: white;
+    text-shadow: 0 2px 3px black;
+}
+
+/* ID selector: apply to one unique element per page 
+
+#id name { select elements w id="id name" } */
+
+#logo {
+    background: cadetblue;
+}
+
+/* Descendent selector: apply to first descendent of parent
+
+#idname descendent ( select descendent if inside the id="idname" } */
+
+#logo h1 {
+    font-family: 'Clicker Script', cursive;
+}
+
+#logo h2 {
+    font-family: 'Elsie Swash Caps', cursive;
+}
+
+/* Pseudo class selector: apply based on event states */
+
+#details a:link, #details a:visited {
+    color: blue;
+    text-decoration: none;
+}
+
+#details a:hover {
+    color: purple;
+    text-decoration: underline;
+}
+
+#details a:active {
+    color: red;
+}
+
+
+
