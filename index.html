@@ -13,77 +13,97 @@
 
     <body>
         <!-- The body is the entire viewable area of the webpage. For example, we can see texts, links, images, and media. -->
+        <div id="social">
+          <a href="#">Twitter</a>
+          <a href="#">Facebook</a>
+          <a href="#">LinkedIn</a>
+        </div>
+        
         <header>
-            <div id="logo">
-            <h1>Phenomenal</h1>
-            <h2>Realty Group</h2>
-            </div>
-            <!-- Links -->
-            <nav>
-                <a href="index.html">About</a>
-                <a href="new-properties.html">New Properties</a>
-                <a href="real-estate-listings.html">Listings</a>
-                <a href="market-report.html">Market Report</a>
-                <a href="contact.html">Contact</a>
-                <a href="http://hud.gov" target="_blank">H.U.D.</a>
-            </nav>
+            <div class="wrapper">
+              <div id="logo">
+              <h1>Phenomenal</h1>
+              <h2>Realty Group</h2>
+              </div>
+              <!-- Links -->
+              <nav>
+                  <a href="index.html">About</a>
+                  <a href="new-properties.html">New Properties</a>
+                  <a href="real-estate-listings.html">Listings</a>
+                  <a href="market-report.html">Market Report</a>
+                  <a href="contact.html">Contact</a>
+                  <a href="http://hud.gov" target="_blank">H.U.D.</a>
+              </nav>
+            </div> <!-- wrapper -->
         </header>
 
-        <section id="featured-property">
-            <figure>
-                <img src="images/flatiron-image.jpg" alt="A Beautiful Medallion of some sort" 
-                title="This is a very nice medallion.">
-                <figcaption>This is a medallion. Unknown photographer</figcaption>
-            </figure>
-            <!--
-                foldername/ = go inside that folder.
-                filename = use a file in current folder.
-                ../ = leave the current folder and go up to the parent folder.
-            -->
-            
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Molestias illum harum iusto error ducimus nihil aut, at natus ut est, reiciendis doloremque voluptatum voluptas explicabo illo qui doloribus provident eligendi.</p>
-            <p>Hello, World.</p>
-            <p>Hello, Moon.</p>
-        </section>
+        <div class="wrapper clearfix">
+          <section id="featured-property" class="col-3 first">
+              <figure>
+                  <img src="images/flatiron-image.jpg" alt="A Beautiful Medallion of some sort" 
+                  title="This is a very nice medallion.">
+                  <figcaption>This is a medallion. Unknown photographer</figcaption>
+              </figure>
+              <!--
+                  foldername/ = go inside that folder.
+                  filename = use a file in current folder.
+                  ../ = leave the current folder and go up to the parent folder.
+              -->
+              
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Molestias illum harum iusto error ducimus nihil aut, at natus ut est, reiciendis doloremque voluptatum voluptas explicabo illo qui doloribus provident eligendi.</p>
+              <p>Hello, World.</p>
+              <p>Hello, Moon.</p>
+          </section>
 
-        <section id="promotional">
-            <figure>
-                <iframe src="https://archive.org/embed/youtube-7tx8oi7sFoc" width="640" height="480" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
-                <figcaption>Phenomenal Realty Group Promotional Video. Source: archive.org</figcaption>
-            </figure>
-        </section>
+          <section id="promotional" class="col-2 first">
+              <figure>
+                  <iframe src="https://archive.org/embed/youtube-7tx8oi7sFoc" width="640" height="480" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+                  <figcaption>Phenomenal Realty Group Promotional Video. Source: archive.org</figcaption>
+              </figure>
+          </section>
+
+          <section id="news" class="col-1">
+            <h3>Company News</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod porro earum, fugit cupiditate recusandae optio sequi architecto impedit nam, ducimus iusto quam quae nostrum officia facilis praesentium repellendus aut! Amet.</p>
+
+          </section>
+        </div>
 
         <section id="details">
-            <div>
-              <h3>Contact</h3>
-              <p>
-                email: <a href="mailto:info@exceptionalrealty.com">info@exceptionalrealty.com</a><br>
-                phone: +1 710 555 1234
-              </p>
-              <h3>Correspondence</h3>
-              <address>
-                Exceptional Realty<br>
-                P.O.Box 5555<br>
-                Brooklyn, NY 11201
-              </address>
-            </div>
-      
-            <div>
-              <h3>Links</h3>
-              <p>
-                <a href="#" target="_blank">Home Restoration</a><br>
-                <a href="#" target="_blank">Afordable Mortgages</a><br>
-                <a href="#" target="_blank">Professional Moving Crew</a>
-              </p>
-            </div>
-      
-            <div>
-              <h3>Follow</h3>
-              <p>
-                <a href="#" target="_blank">Youtube</a><br>
-                <a href="#" target="_blank">Facebook</a><br>
-                <a href="#" target="_blank">Twitter</a>
-              </p>
+            <div class="wrapper clearfix">
+              
+              <div class="col-1 first">
+                <h3>Contact</h3>
+                <p>
+                  email: <a href="mailto:info@exceptionalrealty.com">info@exceptionalrealty.com</a><br>
+                  phone: +1 710 555 1234
+                </p>
+                <h3>Correspondence</h3>
+                <address>
+                  Exceptional Realty<br>
+                  P.O.Box 5555<br>
+                  Brooklyn, NY 11201
+                </address>
+              </div>
+        
+              <div class="col-1">
+                <h3>Links</h3>
+                <p>
+                  <a href="#" target="_blank">Home Restoration</a><br>
+                  <a href="#" target="_blank">Afordable Mortgages</a><br>
+                  <a href="#" target="_blank">Professional Moving Crew</a>
+                </p>
+              </div>
+        
+              <div class="col-1">
+                <h3>Follow</h3>
+                <p>
+                  <a href="#" target="_blank">Youtube</a><br>
+                  <a href="#" target="_blank">Facebook</a><br>
+                  <a href="#" target="_blank">Twitter</a>
+                </p>
+              </div>
+
             </div>
           </section>
 
